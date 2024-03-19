@@ -23,7 +23,7 @@ inputs:
     default: ${{ github.repository }}
 
 runs:
-  using: node16
+  using: node16 --trace-deprecation
   main: dist/index.js
 
 branding:
